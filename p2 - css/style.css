@@ -1,0 +1,144 @@
+body {
+  padding: 10px;
+  background-color: lightgray;
+}
+
+h3:hover {
+  background-color: pink;
+}
+
+
+/* button id='btn-1 */
+#btn-1:hover {
+  color: blue;
+  background-color: black;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/:focus */
+input:focus {
+  background-color: lightblue;
+}
+
+
+/* ------------------------------
+*/
+
+
+/* below for class='btn' */
+
+.btn {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  background-color: #fcad26;
+  font-size: 16px;
+  font-weight: 300px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 20px 40px;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 5px 5px black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif 
+}
+
+.btn:hover {
+  box-shadow: 3px 3px black;
+}
+
+.btn:active {
+  box-shadow: 0 0 black;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 300;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* ------------------------------
+*/
+
+
+div {
+  transform: translateX(100px);
+}
+
+p {
+  width: 50px;
+  height: 50px;
+  background-color: #1abc9c;
+}
+
+p.move-right {
+  background-color: #3498db;
+  transform: translateX(100px);
+}
+
+p.move-down {
+  background-color: #f1c40f;
+  transform: translateY(40px);
+}
+
+p:hover {
+  transform: translate(20px, 20px);
+}
+
+
+/* ------------------------------
+*/
+
+.t1 {
+  width: 80px;
+  height: 80px;
+  background-color: #1abc9c;
+  color: #ecf0f1;
+  border: 2px solid #2c3e50;
+  transform: scale(0.8);
+}
+
+
+.t2 {
+  width: 80px;
+  height: 80px;
+  background-color: #3498db;
+  color: #ecf0f1;
+  border: 2px solid #2c3e50;
+  transform: rotate(-15deg);
+}
+
+
+/* ------------------------------
+    transition
+    http://cubic-bezier.com/
+    https://easings.net/
+*/
+
+.box {
+  background: #9b59b6;
+  height: 100px;
+  width: 100px;
+  line-height:100px;
+  text-align: center;
+  color: white;
+  font-size: 17px;
+  border-radius: 20px;
+}
+
+.box:hover {
+  transform: translateX(300px);
+  background-color: teal;
+}
+
+.animated{
+  transition-property: transform;
+  transition-duration: 2s;
+  transition-timing-function: cubic-bezier(0.050, 0.005, 0.000, 0.870); 
+}
+
+
+
